@@ -1,5 +1,4 @@
-/* Google Fonts */
-@import url('fonttypewriter.css');
+@import url('monsterrat.css');
 html {
 	position: relative;
 }
@@ -8,9 +7,9 @@ html {
 	margin-bottom: 0;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
+    font-size: 15px !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 4px;
+    letter-spacing: 1.5px;
     border-radius: 0;
 }
 
@@ -39,8 +38,7 @@ body{
 	background-image: url('../img/header-bg.jpg');
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: 10px -2
-	00px;
+	background-position: 0 -100px;
 	color: #eaeaea;
 	overflow: hidden;
 }
@@ -112,7 +110,7 @@ footer {
 }
 
 footer p{
-	color:x` #aaa;
+	color: #aaa;
 	font-size: 0.9em;
 }
 

@@ -1,11 +1,5 @@
-
-
-
-
-
-
 // event pada saat link diklik
-$('.page-scroll').on('click', function(event){
+$('.page-scroll').on('click', function (event) {
 
 	// ambil isi tujuan
 	var tujuan = $(this).attr('href');
@@ -23,33 +17,33 @@ $('.page-scroll').on('click', function(event){
 
 // parallax
 //about
-$(window).on('load', function() {
+$(window).on('load', function () {
 	$('.pKiri').addClass('pMuncul');
 	$('.pKanan').addClass('pMuncul');
 });
 
-$(window).scroll(function() {
+$(window).scroll(function () {
 	var wScroll = $(this).scrollTop();
 
 	//jumbotron
 	$('.jumbotron img').css({
-		'transform' : 'translate(0px, '+ wScroll/4 +'%)'
+		'transform': 'translate(0px, ' + wScroll / 4 + '%)'
 	});
 
 	$('.jumbotron h1').css({
-		'transform' : 'translate(0px, '+ wScroll/2 +'%)'
+		'transform': 'translate(0px, ' + wScroll / 2 + '%)'
 	});
 
 	$('.jumbotron p').css({
-		'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
+		'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
 	});
 
 	//portfolio
-	if ( wScroll > $('.portfolio').offset().top -250) {
-		$('.portfolio .thumbnail').each(function(i) {
-			setTimeout(function() {
+	if (wScroll > $('.portfolio').offset().top - 250) {
+		$('.portfolio .thumbnail').each(function (i) {
+			setTimeout(function () {
 				$('.portfolio .thumbnail').eq(i).addClass('muncul');
-			}, 300 * (i+1));
+			}, 300 * (i + 1));
 		});
 	}
 });
